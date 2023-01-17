@@ -19,7 +19,7 @@ class Form:
 
 
     def open_page(self):
-        browser.open('/automation-practice-form')
+        browser.open('https://demoqa.com/automation-practice-form')
         browser.driver.maximize_window()
 
 
