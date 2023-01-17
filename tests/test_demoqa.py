@@ -10,7 +10,7 @@ def test_submitting_form(setup_browser):
     allure.dynamic.label('owner', 'eva.shorina')
     allure.dynamic.feature('Проверка отправки формы')
 
-    browser = setup_browser
+
     form = Form()
 
     with allure.step('Заполняем данные формы'):
