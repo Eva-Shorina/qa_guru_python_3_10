@@ -2,9 +2,8 @@ import os
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selene import Browser, Config
 from demoqa.utils import attach
-
+from selene.support.shared import browser
 
 
 @pytest.fixture(scope='function', autouse=True)
@@ -26,7 +25,7 @@ def setup_browser():
         options=options
     )
 
-    browser = Browser(Config(driver))
+    browser.config.driver = driver
 
     yield browser
 
