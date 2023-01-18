@@ -4,7 +4,7 @@ from demoqa.model.pages.practise_form import Form
 from demoqa.data.user_data import alla
 import allure
 
-def test_submitting_form(setup_browser):
+def test_submitting_form():
     allure.dynamic.tag('web')
     allure.dynamic.severity(Severity.NORMAL)
     allure.dynamic.label('owner', 'eva.shorina')
