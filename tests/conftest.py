@@ -26,6 +26,8 @@ def setup_browser():
     )
 
     browser.config.driver = driver
+    browser.config.window_width = 2000
+    browser.config.window_height = 1500
 
     yield browser
 
