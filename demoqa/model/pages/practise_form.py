@@ -74,11 +74,9 @@ class Form:
         browser.element(f'.react-datepicker__day--0{user.birth_day}').click()
 
 
-    '''
     def send_file(self):
-        path = work_with_path.get_path('resources/pic.jpg')
+        path = work_with_path.get_path('resourses/pic.jpg')
         browser.element('#uploadPicture').set_value(path)
-    '''
 
     def click(self, locator):
         browser.element(locator).click()
@@ -99,7 +97,7 @@ class Form:
         self.add_birthday(user)
         self.add_subject(user)
         self.choose_hobby(user)
-        #self.send_file()
+        self.send_file()
         self.add_state(user)
         self.add_city(user)
         self.submit()
