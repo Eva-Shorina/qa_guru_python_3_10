@@ -6,6 +6,7 @@ from demoqa.model.controls.option_select import Select
 from demoqa.model.controls.radio import Radio
 from demoqa.model.controls.checkbox import Checkbox
 from demoqa.data.user_data import User
+from demoqa.utils import remove_ads
 
 
 class Form:
@@ -21,6 +22,7 @@ class Form:
     def open_page(self):
         browser.open('https://demoqa.com/automation-practice-form')
         browser.driver.maximize_window()
+        remove_ads.remove_junk_ads(browser)
 
 
     def add_name_and_surname(self, user):

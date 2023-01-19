@@ -6,6 +6,7 @@ from demoqa.utils import attach
 from selene.support.shared import browser
 
 
+
 @pytest.fixture(scope='function', autouse=True)
 def setup_browser():
     options = Options()
